@@ -87,6 +87,10 @@ body {
 .big-heading, .small-heading {
     font-family: IranianSerifWeb, serif;
 }
+
+.mfp-content {
+    text-align: right;
+}
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.

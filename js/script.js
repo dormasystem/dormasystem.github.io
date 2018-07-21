@@ -97,7 +97,8 @@ $(document).on('ready', function() {
       percentPosition: true,
       masonry: {
         columnWidth: '.grid-sizer2',
-        gutter: '.gutter-sizer2'
+        gutter: '.gutter-sizer2',
+        isRTL: true
       }
     });
 
@@ -109,7 +110,8 @@ $(document).on('ready', function() {
       itemSelector: '.grid-item3',
       isFitWidth: true,
       masonry: {
-        columnWidth: '.grid-sizer3'
+        columnWidth: '.grid-sizer3',
+        isRTL: true
       }
     });
 
@@ -123,7 +125,8 @@ $(document).on('ready', function() {
       isFitWidth: true,
       filter: '.all',
       masonry: {
-        columnWidth: '.grid-sizer-v1'
+        columnWidth: '.grid-sizer-v1',
+        isRTL: true
       }
     });
 
@@ -152,7 +155,8 @@ $(document).on('ready', function() {
       isFitWidth: true,
       filter: '.design',
       masonry: {
-        columnWidth: '.grid-sizer-v1'
+        columnWidth: '.grid-sizer-v1',
+        isRTL: true
       }
     });
 

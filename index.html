@@ -34,7 +34,13 @@
     <!-- ==============================================
     Custom Stylesheet
     =============================================== -->
-    <link rel="stylesheet" type="text/css" href="http://pierian-design.com/digix/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/lujem/fonts/master/css/vazir.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/lujem/fonts/master/css/iranian-serif-web.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rtl/3.3.2/css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/rtl.css" />
+
+
     <script src="http://pierian-design.com/digix/js/vendor/modernizr.min.js"></script>
 </head>
 
@@ -58,8 +64,8 @@
                     <img src="images/logo.png" alt="" />
                 </a>
             </div>
-            <nav class="collapse navbar-collapse" id="navbar" data-hover="dropdown" data-animations="fadeInDownNew fadeInRightNew fadeInUpNew fadeInLeftNew">
-                <ul class="nav navbar-nav navbar-right">
+            <nav class="collapse navbar-collapse" id="navbar" data-hover="dropdown" data-animations="fadeInDownNew fadeInLeftNew fadeInUpNew fadeInLeftNew">
+                <ul class="nav navbar-nav navbar-left">
                     <li> <a href="#banner">خانه</a> </li>
                     <li> <a href="#about-us">درباره ما</a> </li>
                     <li> <a href="#how-we-work">چگونه کار میکنیم</a></li>
@@ -78,10 +84,10 @@
             <div class="col-md-11">
                 <div class="head-text-area type-2">
                     <div class="small-heading">
-                        <span class="text-gradient">دُرما</span>سیستم
+                        طراحی و اجرای <span class="text-gradient">پارتیشن های شیشه ای</span>
                     </div>
                     <div class="big-heading">
-                        طراحی و اجرای <span class="text-gradient">پارتیشن های شیشه ای</span>
+                        <span class="text-gradient">دُرما</span>سیستم
                     </div>
                     <a href="#about-us" class="scroll-down">
                         <div class="mouse"></div>
@@ -206,7 +212,7 @@
                     <div class="number text-gradient">
                         01.
                     </div>
-                    <h3>بازدید از محل</h3>
+                    <h3 class="text-right">بازدید از محل</h3>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
@@ -214,7 +220,7 @@
                     <div class="number text-gradient">
                         02.
                     </div>
-                    <h3>برآورد هزینه</h3>
+                    <h3 class="text-right">برآورد هزینه</h3>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
@@ -222,15 +228,15 @@
                     <div class="number text-gradient">
                         03.
                     </div>
-                    <h3>طراحی</h3>
+                    <h3 class="text-right">طراحی</h3>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
                 <div class="work-step" data-vp-animate="fadeIn" data-vp-delay="400">
-                    <div class="number text-gradient">
+                    <div class="number text-gradient pull-right">
                         04.
                     </div>
-                    <h3>اجرا</h3>
+                    <h3 class="text-right">اجرا</h3>
                 </div>
             </div>
         </div>
@@ -539,7 +545,7 @@
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
-                        <div class="col-md-12 text-right">
+                        <div class="col-md-12 text-left">
                             <div class="form-group">
                                 <div id="success"></div>
                                 <button type="submit" class="btn btn-primary color-gradient"><span>ارسال</span></button>
@@ -582,12 +588,9 @@
 <script src="http://pierian-design.com/digix/js/vendor/jquery.scrollTo-1.4.2-min.js"></script>
 
 <!-- CUSTOM JS -->
-<script src="http://pierian-design.com/digix/js/script.js"></script>
+<script src="./js/script.js"></script>
 <!-- sendmail -->
-<script src="http://pierian-design.com/digix/js/vendor/form-scripts.js"></script>
-<!-- map -->
-<script src="http://pierian-design.com/digix/js/googlemap-setting.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnFiZUF5A63REsR080Aq4Uoku1J8fIatc&callback=initMap"></script>
+<script src="./js/vendor/form-scripts.js"></script>
 
 </body>
 </html>

@@ -1,37 +1,645 @@
-<!DOCTYPE html><html dir=rtl lang=zxx style="" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths gr__pierian-design_com"><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>دُرما سیستم</title><meta http-equiv=Content-Type content="text/html; charset=UTF-8"><link type=text/css rel=stylesheet href=./static/files/css><style type=text/css>.gm-style .gm-style-cc span, .gm-style .gm-style-cc a, .gm-style .gm-style-mtc div {
-      font-size: 10px
-    }</style><style type=text/css>@media print {
-      .gm-style .gmnoprint, .gmnoprint {
-        display: none
-      }
-    }
 
-    @media screen {
-      .gm-style .gmnoscreen, .gmnoscreen {
-        display: none
-      }
-    }</style><style type=text/css>.gm-style-pbc {
-      transition: opacity ease-in-out;
-      background-color: rgba(0, 0, 0, 0.45);
-      text-align: center
-    }
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>دُرماسیستم</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
-    .gm-style-pbt {
-      font-size: 22px;
-      color: white;
-      font-family: Roboto, Arial, sans-serif;
-      position: relative;
-      margin: 0;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%)
-    }</style><!--[if IE]>
-    <meta http-equiv="x-ua-compatible" content="IE=9"/><![endif]--><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content=""><meta name=keywords content=""><link rel="shortcut icon" href=./images/favicon.ico><link rel=icon type=image/png sizes=16x16 href=./images/favicon-16x16.png><link rel=apple-touch-icon sizes=72x72 href=./images/apple-icon-72x72.png><link rel=apple-touch-icon sizes=114x114 href=./images/apple-icon-114x114.png><link rel=stylesheet type=text/css href=./static/files/bootstrap.min.css><link rel=stylesheet type=text/css href=./static/files/animate.min.css><link rel=stylesheet type=text/css href=//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css><link rel=stylesheet type=text/css href=./static/files/simple-line-icons.css><link rel=stylesheet type=text/css href=./static/files/swiper.min.css><link rel=stylesheet type=text/css href=./static/files/magnific-popup.css><link href=./static/files/css(1) rel=stylesheet><link rel=stylesheet type=text/css href=./static/files/style.css><script src=./static/files/modernizr.min.js></script><script type=text/javascript charset=UTF-8 src=./static/files/common.js></script><script type=text/javascript charset=UTF-8 src=./static/files/util.js></script><script type=text/javascript charset=UTF-8 src=./static/files/map.js></script><script type=text/javascript charset=UTF-8 src=./static/files/marker.js></script><style type=text/css>.gm-style {
-      font: 400 11px Roboto, Arial, sans-serif;
-      text-decoration: none;
-    }
+    <!-- ==============================================
+    Favicons
+    =============================================== -->
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/apple-icon-114x114.png">
 
-    .gm-style img {
-      max-width: none;
-    }</style><script type=text/javascript charset=UTF-8 src=./static/files/onion.js></script><script type=text/javascript charset=UTF-8 src=./static/files/stats.js></script><script type=text/javascript charset=UTF-8 src=./static/files/controls.js></script></head><body id=top-fx data-spy=scroll data-target=#navbar data-gr-c-s-loaded=true><div id=app></div><script src=./static/files/jquery.min.js></script><script src=./static/files/jquery.appear.js></script><script src=./static/files/wow.min.js></script><script src=./static/files/particles.min.js></script><script src=./static/files/bootstrap.min.js></script><script src=./static/files/jquery.superslides.js></script><script src=./static/files/swiper.min.js></script><script src=./static/files/jquery.magnific-popup.min.js></script><script src=./static/files/waypoints.min.js></script><script src=./static/files/jquery.counterup.min.js></script><script src=./static/files/isotope.pkgd.min.js></script><script src=./static/files/imagesloaded.pkgd.min.js></script><script src=./static/files/jquery.youtubebackground.js></script><script src=./static/files/validator.min.js></script><script src=./static/files/jquery.parallax-1.1.3.js></script><script src=./static/files/jquery.localscroll-1.2.7-min.js></script><script src=./static/files/jquery.scrollTo-1.4.2-min.js></script><script src=./static/files/script.js></script><script src=./static/files/form-scripts.js></script><script src=./static/files/googlemap-setting.js></script><script async="" defer="" src=./static/files/js></script><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.9e23f8d1685ccd2ef6c3.js></script><script type=text/javascript src=/static/js/app.b6f0cdd454929c1d3664.js></script></body></html>
+    <!-- ==============================================
+    CSS VENDOR
+    =============================================== -->
+    <link rel="stylesheet" type="text/css" href="http://pierian-design.com/digix/css/vendor/bootstrap.min.css" />
+    <!-- Bootstrap Dropdown Hover CSS -->
+    <link rel="stylesheet" type="text/css" href="http://pierian-design.com/digix/css/vendor/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="http://pierian-design.com/digix/css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://pierian-design.com/digix/css/vendor/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="http://pierian-design.com/digix/css/vendor/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="http://pierian-design.com/digix/css/vendor/magnific-popup.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- ==============================================
+    Custom Stylesheet
+    =============================================== -->
+    <link rel="stylesheet" type="text/css" href="http://pierian-design.com/digix/css/style.css" />
+    <script src="http://pierian-design.com/digix/js/vendor/modernizr.min.js"></script>
+</head>
+
+<body id="top-fx" data-spy="scroll" data-target="#navbar">
+<!-- Load page -->
+<div class="animationload">
+    <div class="loader"></div>
+</div>
+<!-- HEADER -->
+<div id="header" class="header-style-1">
+    <!-- NAVBAR SECTION -->
+    <div class="navbar navbar-main if-s">
+        <div class="container-fluid container-nav">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="index.html">
+                    <img src="images/logo.png" alt="" />
+                </a>
+            </div>
+            <nav class="collapse navbar-collapse" id="navbar" data-hover="dropdown" data-animations="fadeInDownNew fadeInRightNew fadeInUpNew fadeInLeftNew">
+                <ul class="nav navbar-nav navbar-right">
+                    <li> <a href="#banner">خانه</a> </li>
+                    <li> <a href="#about-us">درباره ما</a> </li>
+                    <li> <a href="#how-we-work">چگونه کار میکنیم</a></li>
+                    <li> <a href="#portfolio">نمونه کارها</a></li>
+                    <li> <a href="#contact">تماس</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<!-- head-text-area -->
+<div id="banner" class="section banner banner-style-1 black-overlay parallax" style="background-image: url(./images/banner.jpg); background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-11">
+                <div class="head-text-area type-2">
+                    <div class="small-heading">
+                        <span class="text-gradient">دُرما</span>سیستم
+                    </div>
+                    <div class="big-heading">
+                        طراحی و اجرای <span class="text-gradient">پارتیشن های شیشه ای</span>
+                    </div>
+                    <a href="#intro" class="scroll-down">
+                        <div class="mouse"></div>
+                        <div class="scroll-down-caption">شروع کنید</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- INTRO -->
+<div id="intro" class="section intro pad">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 col-md-3 intro-item-bg" data-vp-animate="fadeIn">
+                <div class="box-icon-2">
+                    <div class="body-content">
+                        <div class="icon-area">
+                            <i class="icon-diamond icons text-gradient"></i>
+                        </div>
+                        <h3>Unique Design</h3>
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 intro-item-bg" data-vp-animate="fadeIn" data-vp-delay="100">
+                <div class="box-icon-2">
+                    <div class="body-content">
+                        <div class="icon-area">
+                            <i class="icon-rocket icons text-gradient"></i>
+                        </div>
+                        <h3>Service Innovation</h3>
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 intro-item-bg" data-vp-animate="fadeIn" data-vp-delay="200">
+                <div class="box-icon-2">
+                    <div class="body-content">
+                        <div class="icon-area">
+                            <i class="icon-screen-desktop icons text-gradient"></i>
+                        </div>
+                        <h3>Digital Strategy</h3>
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 intro-item-bg" data-vp-animate="fadeIn" data-vp-delay="300">
+                <div class="box-icon-2">
+                    <div class="body-content">
+                        <div class="icon-area">
+                            <i class="icon-pencil icons text-gradient"></i>
+                        </div>
+                        <h3>Brand Identity</h3>
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ABOUT US -->
+<div id="about-us" class="section about pad black-overlay parallax" style="background-image: url(http://pierian-design.com/digix/images/samuel-zeller-1605-unsplash.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 section-heading-1">
+                <h2>
+                    درباه ما
+                </h2>
+                <div class="heading-after" data-vp-animate="fadeIn">
+                    <svg width="54px" height="12px" viewBox="0 0 52 13" style="color: #fff;">
+                        <g fill="none">
+                            <g transform="translate(-694.000000, -294.000000)" stroke-width="4" stroke="#fff">
+                                <g transform="translate(695.000000, 297.000000)">
+                                    <polyline points="0.592857143 0.592857143 6.68571429 6.68571429 12.7857143 0.592857143 18.8785714 6.68571429 24.9785714 0.592857143 31.0714286 6.68571429 37.1714286 0.592857143 43.2714286 6.68571429 49.3642857 0.592857143" style="color: #fff;"></polyline>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs">
+                    <li class="active" data-vp-animate="fadeIn"><a data-toggle="tab" href="#tab1">پارتیشن‌های شیشه‌ای</a></li>
+                    <li data-vp-animate="fadeIn" data-vp-delay="100"><a data-toggle="tab" href="#tab2">دُرماسیستم</a></li>
+                    <li data-vp-animate="fadeIn" data-vp-delay="200"><a data-toggle="tab" href="#tab3">گارانتی</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane fade in active">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="tab-description">
+                                    <p>پارتیشن‌های شیشه‌ای با ایجاد دید باز فضای شما را مدرن می کند، باعث افزایش ارتباط چشمی بین کارمندان شده و حداکثر میزان نور را وارد فضای کاری شما می کند.</p>
+
+                                    <p>در طراحی معماری مدرن، پارتیشن‌های شیشه‌ای بین حریم خصوصی فیزیکی و دید باز تعادل ایجاد می کند.</p>
+
+                                    <p>در زندگی مدرن، زمان زیادی را در محل کار سپری می کنیم و نور خورشید به ما نمیرسد، نور طبیعی باعث می شود حس بهتری داشته باشیم.نور طبیعی باعث کاهش استرس، کمک ب سلامتی و افزایش بهروری محیط کاری می شود.</p>
+
+                                    <p>نیزی نیس شما یک معمار ماهر با طرحی واضح در ذهن باشید،ما ب ایده ی شما جامعه عمل میپوشانیم</p>
+
+                                    <p>ما در تامین و نصب تمام تاره‌ها و مدل‌های پارتیشن شیشه‌ای اداری در دو مدل تک جدر و دجدر تخصص داریم. با ما دفتری کارامد، مدرن و با تاره مخصوص ب خود داشته باشید.ما متناسب با بودجه ی شما تاره مخصوص داریم.</p>
+
+                                    <p>درما سیستم منافع شیشه را به دفتر کار شما می آورد.شفافیت، نور خورشید، تطبیق پذیری، ذخیره زمان و هزینه کم</p>
+
+                                    <p>پارتیشن‌های شیشه‌ای بهترین راه برای تقسیم فضا بدون ایجاد تغیرات دائمی در محیط هستند. ایجاد فضای روشن و خاص، به ذهن خلاق برای شکوفا شدن کمک می کند.</p>
+
+                                    <p>قابلیت فیکس شدن در هر فضا با هر شکلی، حس داشتن فضای بزرگ تر، کاهش هزینه انرژی برای روشنایی، مدرن کردن دفتر کار در زمان خیلی کم و کاهش میزان سر صدا از فواید پارتیشن‌های شیشه‌ای است.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="tab-description">
+                                    <p>شرکت درما سیستم در طراحی، تامین و نصب انواع مختلف پارتیشن‌های شیشه‌ای از سال ۹۰ تخصص دارد. ما از سال‌ها تجربه و تخصص برای کمک به بازسازی، زیبا سازی و بهبود عملکرد دفتر شما استفاده می کنیم.</p>
+
+                                    <p>ما برای مشتری ارزش قائلیم و با انجام کار با کیفیت و به کارگیری ماهرترین عوامل اجرایی به دنبال رضایت مشتریان هستیم. در نظر گیری گارانتی برای محصولات گواه این مدعاست.</p>
+
+                                    <p>شرکت درما سیستم با انجام صدها پروژه در مقیاس کوچک،بزرگ و کلان؛ خود را در طراحی داخلی مدرن دفاتر کاری اثبات نموده است.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="tab-description">
+                                    <p>شرکت درما سیستم با استفاده از بهترین و مرغوب‌ترین قطعات و به کارگیری ماهرترین سرویس نصب و اجرا همواره به دنبال ارائه خدمات پارتیشن شیشه‌ای با بالاترین کیفیت ممکن است.لذا برای اطمینان خاطر خریداران و مشتریان، این شرکت هرگونه عیب ونقص مربوط به هریک از اجزای پارتیشن‌ها ا گارانتی می کند.لذا در صورت مشاهده خرابی،با کارشناسان خدمات پس از فروش شرکت تماس حاصل فرمائید.</p>
+
+                                    <p>مواردی ک شامل گارانتی نمی شود</p>
+                                    <p>* سأییدگی و خراش‌های عادی</p>
+                                    <p>* خرابی‌های ناشی از استفاده نادرست</p>
+                                    <p>* حادثه،برخورد و یا ضربه</p>
+                                    <p>در صورتی که پس از برسی پارتیشن توسط گروه خدمات پس از فروش،گزارش خرابی تائید شود،تعمیر و یا تعویض قطعه به صورت رایگان صورت می‌پذیرد.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- HOW WE WORK -->
+<div id="how-we-work" class="section how-we-work pad">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 section-heading-1">
+                <h2>
+                    مراحل انجام کار
+                </h2>
+                <div class="heading-after" data-vp-animate="fadeIn">
+                    <svg width="54px" height="12px" viewBox="0 0 52 13" style="color: #fff;">
+                        <g fill="none">
+                            <g transform="translate(-694.000000, -294.000000)" stroke-width="4" stroke="#fff">
+                                <g transform="translate(695.000000, 297.000000)">
+                                    <polyline points="0.592857143 0.592857143 6.68571429 6.68571429 12.7857143 0.592857143 18.8785714 6.68571429 24.9785714 0.592857143 31.0714286 6.68571429 37.1714286 0.592857143 43.2714286 6.68571429 49.3642857 0.592857143" style="color: #fff;"></polyline>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="work-step" data-vp-animate="fadeIn" data-vp-delay="100">
+                    <div class="number text-gradient">
+                        01.
+                    </div>
+                    <h3>بازدید از محل</h3>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="work-step" data-vp-animate="fadeIn" data-vp-delay="200">
+                    <div class="number text-gradient">
+                        02.
+                    </div>
+                    <h3>برآورد هزینه</h3>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="work-step" data-vp-animate="fadeIn" data-vp-delay="300">
+                    <div class="number text-gradient">
+                        03.
+                    </div>
+                    <h3>طراحی</h3>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="work-step" data-vp-animate="fadeIn" data-vp-delay="400">
+                    <div class="number text-gradient">
+                        04.
+                    </div>
+                    <h3>اجرا</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PORTFOLIO -->
+<div id="portfolio" class="section portfolio">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 section-heading-1">
+                            <h2>
+                                نمونه کارها
+                            </h2>
+                            <div class="heading-after" data-vp-animate="fadeIn">
+                                <svg width="54px" height="12px" viewBox="0 0 52 13" style="color: #fff;">
+                                    <g fill="none">
+                                        <g transform="translate(-694.000000, -294.000000)" stroke-width="4" stroke="#fff">
+                                            <g transform="translate(695.000000, 297.000000)">
+                                                <polyline points="0.592857143 0.592857143 6.68571429 6.68571429 12.7857143 0.592857143 18.8785714 6.68571429 24.9785714 0.592857143 31.0714286 6.68571429 37.1714286 0.592857143 43.2714286 6.68571429 49.3642857 0.592857143" style="color: #fff;"></polyline>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <nav class="navfilter">
+                    <ul class="portfolio_filter">
+                        <li><a href="" class="active" data-filter=".all">همه</a></li>
+                        <li><a href="" data-filter=".darbkesho">درب کشویی</a></li>
+                        <li><a href="" data-filter=".darblola">درب لولایی</a></li>
+                        <li><a href="" data-filter=".dojedare">دوجداره</a></li>
+                        <li><a href="" data-filter=".frame">فریم</a></li>
+                        <li><a href="" data-filter=".ghoflodastgire">قفل و دستگیره</a></li>
+                    </ul>
+                </nav>
+                <div class="clearfix"></div>
+                <div class="grid-v1">
+                    <div class="grid-sizer-v1"></div>
+                    <div class="gutter-sizer-v1"></div>
+                    <!-- item -->
+                    <div class="grid-item-v1 image-background all darbkesho" style="background-image: url(./portfolio/darbkesho1.jpg);">
+                        <a class="popup-with-zoom-anim overlay-portfolio-info" href="#work-modal-image">
+                            <div class="portfolio-item-content">
+                                <h3>درب کشویی</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="grid-item-v1 image-background all darbkesho" style="background-image: url(./portfolio/darbkesho2.jpg)">
+                        <a class="popup-gallery-zoom overlay-portfolio-info" href="#work-modal-image">
+                            <div class="portfolio-item-content">
+                                <h3>درب کشویی</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="grid-item-v1 image-background all darblola" style="background-image: url(./portfolio/darblola1.jpg)">
+                        <a class="popup-with-zoom-anim overlay-portfolio-info" href="#work-modal-image" data-effect="mfp-zoom-in">
+                            <div class="portfolio-item-content">
+                                <h3>درب لولایی</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="grid-item-v1 image-background all darblola" style="background-image: url(./portfolio/darblola2.jpg)">
+                        <a class="popup-with-zoom-anim overlay-portfolio-info" href="#work-modal-image" data-effect="mfp-zoom-in">
+                            <div class="portfolio-item-content">
+                                <h3>درب لولایی</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="grid-item-v1 image-background all darblola" style="background-image: url(./portfolio/darblola3.jpg)">
+                        <a class="popup-with-zoom-anim overlay-portfolio-info" href="#work-modal-image" data-effect="mfp-zoom-in">
+                            <div class="portfolio-item-content">
+                                <h3>درب لولایی</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="grid-item-v1 image-background all dojedare" style="background-image: url(./portfolio/dojedare1.jpg)">
+                        <a class="popup-with-zoom-anim overlay-portfolio-info" href="#work-modal-image" data-effect="mfp-zoom-in">
+                            <div class="portfolio-item-content">
+                                <h3>دوجداره</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="grid-item-v1 image-background all dojedare" style="background-image: url(./portfolio/dojedare2.jpg)">
+                        <a class="popup-with-zoom-anim overlay-portfolio-info" href="#work-modal-image" data-effect="mfp-zoom-in">
+                            <div class="portfolio-item-content">
+                                <h3>دوجداره</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="grid-item-v1 image-background all dojedare" style="background-image: url(./portfolio/dojedare3.jpg)">
+                        <a class="popup-with-zoom-anim overlay-portfolio-info" href="#work-modal-image" data-effect="mfp-zoom-in">
+                            <div class="portfolio-item-content">
+                                <h3>دوجداره</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- item -->
+                    <div class="grid-item-v1 image-background all frame" style="background-image: url(./portfolio/frame1.jpg)">
+                        <a class="popup-with-zoom-anim overlay-portfolio-info" href="#work-modal-image">
+                            <div class="portfolio-item-content">
+                                <h3>فریم</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="grid-item-v1 image-background all frame" style="background-image: url(./portfolio/frame2.jpg)">
+                        <a class="popup-gallery-zoom overlay-portfolio-info" href="#work-modal-image">
+                            <div class="portfolio-item-content">
+                                <h3>فریم</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="grid-item-v1 image-background all frame" style="background-image: url(./portfolio/frame3.jpg)">
+                        <a class="popup-with-zoom-anim overlay-portfolio-info" href="#work-modal-image" data-effect="mfp-zoom-in">
+                            <div class="portfolio-item-content">
+                                <h3>فریم</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="grid-item-v1 image-background all frame" style="background-image: url(./portfolio/frame4.jpg)">
+                        <a class="popup-with-zoom-anim overlay-portfolio-info" href="#work-modal-image" data-effect="mfp-zoom-in">
+                            <div class="portfolio-item-content">
+                                <h3>فریم</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="grid-item-v1 image-background all frame" style="background-image: url(./portfolio/frame5.jpg)">
+                        <a class="popup-with-zoom-anim overlay-portfolio-info" href="#work-modal-image" data-effect="mfp-zoom-in">
+                            <div class="portfolio-item-content">
+                                <h3>فریم</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- item -->
+                    <div class="grid-item-v1 image-background all ghoflodastgire" style="background-image: url(./portfolio/ghoflodastgire1.jpg)">
+                        <a class="popup-with-zoom-anim overlay-portfolio-info" href="#work-modal-image" data-effect="mfp-zoom-in">
+                            <div class="portfolio-item-content">
+                                <h3>قفل و دستگیره</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="grid-item-v1 image-background all ghoflodastgire" style="background-image: url(./portfolio/ghoflodastgire2.jpg)">
+                        <a class="popup-with-zoom-anim overlay-portfolio-info" href="#work-modal-image" data-effect="mfp-zoom-in">
+                            <div class="portfolio-item-content">
+                                <h3>قفل و دستگیره</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="grid-item-v1 image-background all ghoflodastgire" style="background-image: url(./portfolio/ghoflodastgire3.jpg)">
+                        <a class="popup-with-zoom-anim overlay-portfolio-info" href="#work-modal-image" data-effect="mfp-zoom-in">
+                            <div class="portfolio-item-content">
+                                <h3>قفل و دستگیره</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="grid-item-v1 image-background all ghoflodastgire" style="background-image: url(./portfolio/ghoflodastgire4.jpg)">
+                        <a class="popup-with-zoom-anim overlay-portfolio-info" href="#work-modal-image" data-effect="mfp-zoom-in">
+                            <div class="portfolio-item-content">
+                                <h3>قفل و دستگیره</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="work-modal-image" class="white-popup-block zoom-anim-dialog mfp-hide">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2 class="popup-progect-title">دُرماسیستم</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <img src="images/oladimeji-odunsi-306172-unsplash.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-3">
+                <div class="single-portfolio">
+                    <h3>توضیحات پروژه</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+
+                    <h3>جزئیات پروژه</h3>
+                    <ul class="detail-list">
+                        <li><span>مشتری:</span>   نام شرکت</li>
+                        <li><span>تاریخ:</span>   ۲۵ فروردین ۹۷</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA -->
+<div id="cta" class="section cta pad particles-pointer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <h2 class="white" data-vp-animate="fadeIn">مشتاقید با ما کار کنید؟</h2>
+                <p class="subheading" data-vp-animate="fadeIn" data-vp-delay="100">همین حالا اقدام کنید!</p>
+                <a href="#contact" class="btn btn-primary color-gradient" data-vp-animate="fadeIn" data-vp-delay="200"><span>تماس بگیرید</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="section contact pad image-background black-overlay" style="background-image: url(http://pierian-design.com/digix/images/nasa-53884-unsplash.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 section-heading-1">
+                <h2>
+                    تماس با ما
+                </h2>
+                <div class="heading-after" data-vp-animate="fadeIn">
+                    <svg width="54px" height="12px" viewBox="0 0 52 13" style="color: #fff;">
+                        <g fill="none">
+                            <g transform="translate(-694.000000, -294.000000)" stroke-width="4" stroke="#fff">
+                                <g transform="translate(695.000000, 297.000000)">
+                                    <polyline points="0.592857143 0.592857143 6.68571429 6.68571429 12.7857143 0.592857143 18.8785714 6.68571429 24.9785714 0.592857143 31.0714286 6.68571429 37.1714286 0.592857143 43.2714286 6.68571429 49.3642857 0.592857143" style="color: #fff;"></polyline>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="contact-info clearfix">
+                    <div class="contact-text">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                    </div>
+                    <div class="contact-info-box">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>+(991) 2 - 989 - 999</span>
+                    </div>
+                    <div class="contact-info-box">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        <span>dormasystem@gmail.com</span>
+                    </div>
+                    <div class="contact-info-box">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <span>www.dormasystem.com</span>
+                    </div>
+                    <div class="contact-info-box">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span>شاهرود، ایران</span>
+                    </div>
+                    <ul class="social-links">
+                        <li><a href="#" class="color-gradient"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="color-gradient"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="color-gradient"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <form action="php/form-process.php" class="form-contact" id="contactForm" data-toggle="validator" novalidate="" method="post">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" required name="contact_names" placeholder="نام شما">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" required name="contact_names" dir="ltr" placeholder="you@yourdomain.tld">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea class="form-control" name="contact_message" rows="6" placeholder="متن پیام"></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-right">
+                            <div class="form-group">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-primary color-gradient"><span>ارسال</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="section footer pad">
+    <div class="fcopy text-center">
+        تمامی حقوق متعلق به شرکت دُرماسیستم می‌باشد
+    </div>
+
+</div>
+
+<a href="#top-fx" id="back-to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+<!-- JS VENDOR -->
+<script src="http://pierian-design.com/digix/js/vendor/jquery.min.js"></script>
+<script src="http://pierian-design.com/digix/js/vendor/jquery.appear.js"></script>
+<script src="http://pierian-design.com/digix/js/vendor/particles.min.js"></script>
+<script src="http://pierian-design.com/digix/js/vendor/bootstrap.min.js"></script>
+<script src="http://pierian-design.com/digix/js/vendor/jquery.superslides.js"></script>
+<script src="http://pierian-design.com/digix/js/vendor/swiper.min.js"></script>
+<script src="http://pierian-design.com/digix/js/vendor/jquery.magnific-popup.min.js"></script>
+<script src="http://pierian-design.com/digix/js/vendor/waypoints.min.js"></script>
+<script src="http://pierian-design.com/digix/js/vendor/jquery.counterup.min.js"></script>
+<script src="http://pierian-design.com/digix/js/vendor/isotope.pkgd.min.js"></script>
+<script src="http://pierian-design.com/digix/js/vendor/imagesloaded.pkgd.min.js"></script>
+<script src="http://pierian-design.com/digix/js/vendor/jquery.youtubebackground.js"></script>
+<script src="http://pierian-design.com/digix/js/vendor/wow.min.js"></script>
+<script src="http://pierian-design.com/digix/js/vendor/validator.min.js"></script>
+<script src="http://pierian-design.com/digix/js/vendor/jquery.parallax-1.1.3.js"></script>
+<script src="http://pierian-design.com/digix/js/vendor/jquery.localscroll-1.2.7-min.js"></script>
+<script src="http://pierian-design.com/digix/js/vendor/jquery.scrollTo-1.4.2-min.js"></script>
+
+<!-- CUSTOM JS -->
+<script src="http://pierian-design.com/digix/js/script.js"></script>
+<!-- sendmail -->
+<script src="http://pierian-design.com/digix/js/vendor/form-scripts.js"></script>
+<!-- map -->
+<script src="http://pierian-design.com/digix/js/googlemap-setting.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnFiZUF5A63REsR080Aq4Uoku1J8fIatc&callback=initMap"></script>
+
+</body>
+</html>

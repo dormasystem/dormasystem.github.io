@@ -486,12 +486,12 @@ a {
     font-weight: 800;
     -webkit-text-fill-color: transparent!important;
     -webkit-background-clip: text!important;
-    color: #fc4e1b !important;
-    background: linear-gradient(right, #fc4e1b 0%, #f6b533 100%);
-    background: -o-linear-gradient(right, #fc4e1b 0%, #f6b533 100%);
-    background: -ms-linear-gradient(right, #fc4e1b 0%, #f6b533 100%);
-    background: -moz-linear-gradient(right, #fc4e1b 0%, #f6b533 100%);
-    background: -webkit-linear-gradient(right, #fc4e1b 0%, #f6b533 100%);
+    color: #1bcafa !important;
+    background: linear-gradient(right, #1bcafa 0%, #3377f5 100%);
+    background: -o-linear-gradient(right, #1bcafa 0%, #3377f5 100%);
+    background: -ms-linear-gradient(right, #1bcafa 0%, #3377f5 100%);
+    background: -moz-linear-gradient(right, #1bcafa 0%, #3377f5 100%);
+    background: -webkit-linear-gradient(right, #1bcafa 0%, #3377f5 100%);
 }
 .section-heading-1 {
     position: relative;
@@ -691,11 +691,11 @@ a {
 }
 /* 3.5 Color gradient styles*/
 .color-gradient {
-    background-image: -o-linear-gradient(0deg, rgba(252, 78, 27, 0.9) 0%, rgba(246, 181, 51, 0.9) 100%) !important;
-    background-image: -ms--linear-gradient(0deg, rgba(252, 78, 27, 0.9) 0%, rgba(246, 181, 51, 0.9) 100%) !important;
-    background-image: -moz-linear-gradient(0deg, rgba(252, 78, 27, 0.9) 0%, rgba(246, 181, 51, 0.9) 100%) !important;
-    background-image: -webkit-linear-gradient(0deg, rgba(252, 78, 27, 0.9) 0%, rgba(246, 181, 51, 0.9) 100%) !important;
-    background-image: linear-gradient(0deg, rgba(252, 78, 27, 0.9) 0%, rgba(246, 181, 51, 0.9) 100%) !important;
+    background-image: -o-linear-gradient(0deg, rgba(27, 202, 250, 0.9) 0%, rgba(51, 119, 245, 0.9) 100%) !important;
+    background-image: -ms--linear-gradient(0deg, rgba(27, 202, 250, 0.9) 0%, rgba(51, 119, 245, 0.9) 100%) !important;
+    background-image: -moz-linear-gradient(0deg, rgba(27, 202, 250, 0.9) 0%, rgba(51, 119, 245, 0.9) 100%) !important;
+    background-image: -webkit-linear-gradient(0deg, rgba(27, 202, 250, 0.9) 0%, rgba(51, 119, 245, 0.9) 100%) !important;
+    background-image: linear-gradient(0deg, rgba(27, 202, 250, 0.9) 0%, rgba(51, 119, 245, 0.9) 100%) !important;
 }
 .black-overlay:after {
     content: "";
@@ -986,7 +986,7 @@ textarea.form-control {
     transition: all 0.3s ease;
 }
 .swiper-pagination-bullet-active {
-    background: #fc4e1b;
+    background: #1bcafa;
 }
 /**
  * 4. - LOGO & NAVIGATION
@@ -1251,7 +1251,7 @@ textarea.form-control {
     background: #ffffff;
     border-radius: 50%;
     font-size: 25px;
-    color: #fc4e1b !important;
+    color: #1bcafa !important;
     text-align: center;
     outline: none !important;
     cursor: pointer;
@@ -1484,11 +1484,11 @@ textarea.form-control {
 .nav-tabs > li.active > a:hover {
     position: relative;
     background-color: transparent;
-    background-image: -o-linear-gradient(0deg, rgba(252, 78, 27, 0.9) 0%, rgba(246, 181, 51, 0.9) 100%);
-    background-image: -ms--linear-gradient(0deg, rgba(252, 78, 27, 0.9) 0%, rgba(246, 181, 51, 0.9) 100%);
-    background-image: -moz-linear-gradient(0deg, rgba(252, 78, 27, 0.9) 0%, rgba(246, 181, 51, 0.9) 100%);
-    background-image: -webkit-linear-gradient(0deg, rgba(252, 78, 27, 0.9) 0%, rgba(246, 181, 51, 0.9) 100%);
-    background-image: linear-gradient(0deg, rgba(252, 78, 27, 0.9) 0%, rgba(246, 181, 51, 0.9) 100%);
+    background-image: -o-linear-gradient(0deg, rgba(27, 202, 250, 0.9) 0%, rgba(51, 119, 245, 0.9) 100%);
+    background-image: -ms--linear-gradient(0deg, rgba(27, 202, 250, 0.9) 0%, rgba(51, 119, 245, 0.9) 100%);
+    background-image: -moz-linear-gradient(0deg, rgba(27, 202, 250, 0.9) 0%, rgba(51, 119, 245, 0.9) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgba(27, 202, 250, 0.9) 0%, rgba(51, 119, 245, 0.9) 100%);
+    background-image: linear-gradient(0deg, rgba(27, 202, 250, 0.9) 0%, rgba(51, 119, 245, 0.9) 100%);
     border: 0;
     color: #fff;
     z-index: 1;
@@ -1558,12 +1558,12 @@ textarea.form-control {
     line-height: 22px;
     -webkit-text-fill-color: transparent!important;
     -webkit-background-clip: text!important;
-    color: #fc4e1b !important;
-    background: linear-gradient(right, #fc4e1b 0%, #f6b533 100%);
-    background: -o-linear-gradient(right, #fc4e1b 0%, #f6b533 100%);
-    background: -ms-linear-gradient(right, #fc4e1b 0%, #f6b533 100%);
-    background: -moz-linear-gradient(right, #fc4e1b 0%, #f6b533 100%);
-    background: -webkit-linear-gradient(right, #fc4e1b 0%, #f6b533 100%);
+    color: #1bcafa !important;
+    background: linear-gradient(right, #1bcafa 0%, #3377f5 100%);
+    background: -o-linear-gradient(right, #1bcafa 0%, #3377f5 100%);
+    background: -ms-linear-gradient(right, #1bcafa 0%, #3377f5 100%);
+    background: -moz-linear-gradient(right, #1bcafa 0%, #3377f5 100%);
+    background: -webkit-linear-gradient(right, #1bcafa 0%, #3377f5 100%);
 }
 .panel-default.active .panel-title:after {
     content: "\f068";
@@ -1649,7 +1649,7 @@ textarea.form-control {
     list-style: none;
 }
 .faq-list li .fa {
-    color: #f00;
+    color: #00ffff;
     font-size: 14px;
     margin-left: 10px;
 }
@@ -1673,7 +1673,7 @@ textarea.form-control {
 }
 .faq-1 .item .question:before {
     content: "\f059";
-    color: #FF0000;
+    color: #00ffff;
     font-family: FontAwesome;
     position: absolute;
     right: 0;
@@ -1744,6 +1744,7 @@ textarea.form-control {
     margin: 22px 0 40px;
 }
 .number {
+    font-family: 'Poppins';
     position: absolute;
     font-size: 78px;
     line-height: 1;
@@ -2224,7 +2225,7 @@ textarea.form-control {
 }
 .price-detail .price-detail-heading {
     font-size: 16px;
-    color: #0071BC;
+    color: #ba4700;
     font-weight: 700;
     padding: 20px 0;
 }
@@ -2292,7 +2293,7 @@ textarea.form-control {
     font-size: 46px;
     font-weight: 500;
     line-height: 1;
-    color: #505cfd;
+    color: #fcee51;
     margin: 0 auto;
     padding-top: 45px;
     padding-bottom: 45px;
@@ -2676,11 +2677,11 @@ ul.footer-list li {
     color: #fff !important;
 }
 span.page-number {
-    background-image: -o-linear-gradient(0deg, rgba(252, 78, 27, 0.9) 0%, rgba(246, 181, 51, 0.9) 100%);
-    background-image: -ms--linear-gradient(0deg, rgba(252, 78, 27, 0.9) 0%, rgba(246, 181, 51, 0.9) 100%);
-    background-image: -moz-linear-gradient(0deg, rgba(252, 78, 27, 0.9) 0%, rgba(246, 181, 51, 0.9) 100%);
-    background-image: -webkit-linear-gradient(0deg, rgba(252, 78, 27, 0.9) 0%, rgba(246, 181, 51, 0.9) 100%);
-    background-image: linear-gradient(0deg, rgba(252, 78, 27, 0.9) 0%, rgba(246, 181, 51, 0.9) 100%);
+    background-image: -o-linear-gradient(0deg, rgba(27, 202, 250, 0.9) 0%, rgba(51, 119, 245, 0.9) 100%);
+    background-image: -ms--linear-gradient(0deg, rgba(27, 202, 250, 0.9) 0%, rgba(51, 119, 245, 0.9) 100%);
+    background-image: -moz-linear-gradient(0deg, rgba(27, 202, 250, 0.9) 0%, rgba(51, 119, 245, 0.9) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgba(27, 202, 250, 0.9) 0%, rgba(51, 119, 245, 0.9) 100%);
+    background-image: linear-gradient(0deg, rgba(27, 202, 250, 0.9) 0%, rgba(51, 119, 245, 0.9) 100%);
 }
 a.page-number:hover {
     background-color: #1f1e2b;

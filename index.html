@@ -175,25 +175,7 @@
                                         <img :src="item.image" alt="" class="img-responsive">
                                     </div>
                                     <div class="col-md-3">
-                                        <div class="single-portfolio">
-                                            <h3>توضیحات پروژه</h3>
-                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                                طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                                سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
-                                                متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
-                                                درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با
-                                                نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
-                                                خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید
-                                                داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان
-                                                رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات
-                                                پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
-
-                                            <h3>جزئیات پروژه</h3>
-                                            <ul class="detail-list">
-                                                <li><span>مشتری:</span> نام شرکت</li>
-                                                <li><span>تاریخ:</span> ۲۵ فروردین ۹۷</li>
-                                            </ul>
-                                        </div>
+                                        <div class="single-portfolio" v-html="descriptions[item.descID]"></div>
                                     </div>
                                 </div>
                             </div>
@@ -432,48 +414,87 @@
     el: '#portfolio-items',
     data: {
       items: [
-        {id: 'darbkesho1', title: 'درب کشویی', image: './portfolio/darbkesho1.jpg', cat: 'darbkesho'},
-        {id: 'darbkesho2', title: 'درب کشویی', image: './portfolio/darbkesho2.jpg', cat: 'darbkesho'},
+        {id: 'darbkesho1', title: 'درب کشویی', image: './portfolio/darbkesho1.jpg', cat: 'darbkesho', descID:0},
+        {id: 'darbkesho2', title: 'درب کشویی', image: './portfolio/darbkesho2.jpg', cat: 'darbkesho', descID:0},
 
-        {id: 'darblola1', title: 'درب لولایی', image: './portfolio/darblola1.jpg', cat: 'darblola'},
-        {id: 'darblola2', title: 'درب لولایی', image: './portfolio/darblola2.jpg', cat: 'darblola'},
-        {id: 'darblola3', title: 'درب لولایی', image: './portfolio/darblola3.jpg', cat: 'darblola'},
+        {id: 'darblola1', title: 'درب لولایی', image: './portfolio/darblola1.jpg', cat: 'darblola', descID:0},
+        {id: 'darblola2', title: 'درب لولایی', image: './portfolio/darblola2.jpg', cat: 'darblola', descID:0},
+        {id: 'darblola3', title: 'درب لولایی', image: './portfolio/darblola3.jpg', cat: 'darblola', descID:0},
 
-        {id: 'dojedare1', title: 'دوجداره', image: './portfolio/dojedare1.jpg', cat: 'dojedare'},
-        {id: 'dojedare2', title: 'دوجداره', image: './portfolio/dojedare2.jpg', cat: 'dojedare'},
-        {id: 'dojedare3', title: 'دوجداره', image: './portfolio/dojedare3.jpg', cat: 'dojedare'},
+        {id: 'dojedare1', title: 'دوجداره', image: './portfolio/dojedare1.jpg', cat: 'dojedare', descID:1},
+        {id: 'dojedare2', title: 'دوجداره', image: './portfolio/dojedare2.jpg', cat: 'dojedare', descID:1},
+        {id: 'dojedare3', title: 'دوجداره', image: './portfolio/dojedare3.jpg', cat: 'dojedare', descID:1},
 
-        {id: 'frame1', title: 'فریم', image: './portfolio/frame1.jpg', cat: 'frame'},
-        {id: 'frame2', title: 'فریم', image: './portfolio/frame2.jpg', cat: 'frame'},
-        {id: 'frame3', title: 'فریم', image: './portfolio/frame3.jpg', cat: 'frame'},
-        {id: 'frame4', title: 'فریم', image: './portfolio/frame4.jpg', cat: 'frame'},
-        {id: 'frame5', title: 'فریم', image: './portfolio/frame5.jpg', cat: 'frame'},
+        {id: 'frame1', title: 'فریم', image: './portfolio/frame1.jpg', cat: 'frame', descID:2},
+        {id: 'frame2', title: 'فریم', image: './portfolio/frame2.jpg', cat: 'frame', descID:2},
+        {id: 'frame3', title: 'فریم', image: './portfolio/frame3.jpg', cat: 'frame', descID:2},
+        {id: 'frame4', title: 'فریم', image: './portfolio/frame4.jpg', cat: 'frame', descID:2},
+        {id: 'frame5', title: 'فریم', image: './portfolio/frame5.jpg', cat: 'frame', descID:2},
 
         {
           id: 'ghoflodastgire1',
           title: 'قفل و دستگیره',
           image: './portfolio/ghoflodastgire1.jpg',
-          cat: 'ghoflodastgire'
+          cat: 'ghoflodastgire',
+          descID:3
         },
         {
           id: 'ghoflodastgire2',
           title: 'قفل و دستگیره',
           image: './portfolio/ghoflodastgire2.jpg',
-          cat: 'ghoflodastgire'
+          cat: 'ghoflodastgire',
+          descID:3
         },
         {
           id: 'ghoflodastgire3',
           title: 'قفل و دستگیره',
           image: './portfolio/ghoflodastgire3.jpg',
-          cat: 'ghoflodastgire'
+          cat: 'ghoflodastgire',
+          descID:3
         },
         {
           id: 'ghoflodastgire4',
           title: 'قفل و دستگیره',
           image: './portfolio/ghoflodastgire4.jpg',
-          cat: 'ghoflodastgire'
+          cat: 'ghoflodastgire',
+          descID:3
         },
-      ]
+      ],
+        descriptions: [
+            // 1
+            '<p>پارتیشن تک جداره</p>' +
+            '<p>پارتیشن‌های تک جداره حداکثر میزان شفافیت را با صرفه اقتصادی بالا ترکیب می کند. زیبایی خیره کننده و هزینه نصب کم، از ویژگی‌های پارتیشن تک جداره هستند. پارتیشن تک جداره بهترین انتخاب است برای زمانی که نیاز به جلوگیری از ورود صدا زیاد نیست.</p>' +
+            '<ul>' +
+            '    <li>عملکرد صوتی تا ۳۲ دسیبل</li>' +
+            '    <li>ضخامت ۱۰-۱۲ میلیمتر</li>' +
+            '    <li>قابل جا به جایی و استفاده مجدد</li>' +
+            '    <li>امکان استفاده از شیشه‌های ضد حریق</li>' +
+            '    <li>صرف جویی در هزینه</li>' +
+            '</ul>',
+            // 2
+            '<p>دوجداره</p>' +
+            '<p>سیستم‌های دو جداره ترکیب بهینه روشنایی و عملکرد اکوستیک هستند.</p>' +
+            '<p>اگر به دنبال حریم خصوصی با آرامش و سکوت بیشتر و یا جدا سازی یک محل از سر و صدای اطراف هستید، پارتیشن‌های شیشه‌ای درما سیستم بهترین گزینه هستند.</p>' +
+            '<ul>' +
+            '    <li>عملکرد صوتی تا ۴۲ دسیبل</li>' +
+            '    <li>محیطی گرم در زمستان و محیطی سردتر در تابستان</li>' +
+            '    <li>صرف جویی در هزینه‌های انرژی و کاهش هدر رفت آن</li>' +
+            '</ul>',
+            // 3
+            '<p>انواع فریم</p>' +
+            '<p>درما سیستم با ارائه به روزترین فریم‌های روز دنیا، پارتیشن شما را کادر بندی می‌کند. جنس فریم‌ها از آلمینیوم با سطح آنادایز شده بوده و در مقابل خراش، خوردگی و ضربه مقاومت بالایی دارند و در رنگ‌های مختلف ارائه می شود.</p>',
+            // 4
+            '<p>انواع قفل و دستگیره</p>' +
+            '<ul>' +
+            '    <li>دستگیره ساده (بدون قفل)</li>' +
+            '    <li>دستگیره‌های قفل دار</li>' +
+            '    <li>دستگیره‌های دیجیتال</li>' +
+            '</ul>' +
+            '<p>بسته به نیاز مشتری، درما سیستم، طیف وسیعی از انواع قفل و دستگیره را ارائه می دهد.</p>' +
+            '<p>اگر امنیت برای شما اهمیت دارد ما دستگیره‌های قفل دار مکانیکی و یا دیجیتال را پیشنهاد می کنیم.</p>' +
+            '<p>دستگیره‌های مکانیکی در انواع ایرانی، ترک، مرونی ایتالیا و متال گلس ایتالیا ارائه می گرد.</p>' +
+            '<p>همچنین می‌توان از دستگیره‌های دیجیتال،که با اثر انگشت کار میکنند و امنیت فوق‌العاده‌ای را به همراه دارند؛ استفاده کرد.</p>'
+        ],
     }
   })
 </script>

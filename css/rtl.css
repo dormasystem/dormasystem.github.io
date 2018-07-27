@@ -706,7 +706,7 @@ a {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(27, 26, 37, 0.9);
+    background: rgba(27, 26, 37, 0.8);
     z-index: 0;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -3505,6 +3505,7 @@ ul.sidebar-list li {
     .navbar > .container .navbar-brand,
     .navbar > .container-fluid .navbar-brand {
         margin-right: 0px;
+        margin-left: 16px;
     }
     .navbar-nav > li > a {
         padding: 30px 24px;

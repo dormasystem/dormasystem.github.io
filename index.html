@@ -158,7 +158,7 @@
                     <!-- item -->
                     <template v-for="item in items">
                         <div class="grid-item-v1 image-background all" :class="[item.cat]"
-                             :style="{backgroundImage: 'url('+item.image+')'}">
+                             :style="{backgroundImage: 'url('+item.thumbnail+')'}">
                             <a class="popup-with-zoom-anim overlay-portfolio-info" :href="'#work-modal-'+item.id">
                                 <div class="portfolio-item-content">
                                     <h3>{{item.title}}</h3>
@@ -169,7 +169,7 @@
                             <div class="container">
                                 <div class="row text-center">
                                     <div class="col-md-12">
-                                        <h2 class="popup-progect-title">دُرماسیستم</h2>
+                                        <h2 class="popup-progect-title">{{item.title}}</h2>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -418,49 +418,288 @@
     el: '#portfolio-items',
     data: {
       items: [
-        {id: 'darbkesho1', title: 'درب کشویی', image: './portfolio/darbkesho1.jpg', cat: 'darbkesho', descID: 5},
-        {id: 'darbkesho2', title: 'درب کشویی', image: './portfolio/darbkesho2.jpg', cat: 'darbkesho', descID: 5},
-        {id: 'darbkesho3', title: 'درب کشویی', image: './portfolio/darbkesho3.jpg', cat: 'darbkesho', descID: 5},
-        {id: 'darbkesho4', title: 'درب کشویی', image: './portfolio/darbkesho4.jpg', cat: 'darbkesho', descID: 5},
+        {
+          id: 'darbkesho1',
+          title: 'درب کشویی',
+          image: './portfolio/darbkesho1.jpg',
+          thumbnail: './portfolio/darbkesho1_tn.jpg',
+          cat: 'darbkesho',
+          descID: 5
+        },
+        {
+          id: 'darbkesho2',
+          title: 'درب کشویی',
+          image: './portfolio/darbkesho2.jpg',
+          thumbnail: './portfolio/darbkesho2_tn.jpg',
+          cat: 'darbkesho',
+          descID: 5
+        },
+        {
+          id: 'darbkesho3',
+          title: 'درب کشویی',
+          image: './portfolio/darbkesho3.jpg',
+          thumbnail: './portfolio/darbkesho3_tn.jpg',
+          cat: 'darbkesho',
+          descID: 5
+        },
+        {
+          id: 'darbkesho4',
+          title: 'درب کشویی',
+          image: './portfolio/darbkesho4.jpg',
+          thumbnail: './portfolio/darbkesho4_tn.jpg',
+          cat: 'darbkesho',
+          descID: 5
+        },
 
-        {id: 'darblola1', title: 'درب لولایی', image: './portfolio/darblola1.jpg', cat: 'darblola', descID: 0},
-        {id: 'darblola2', title: 'درب لولایی', image: './portfolio/darblola2.jpg', cat: 'darblola', descID: 0},
-        {id: 'darblola3', title: 'درب لولایی', image: './portfolio/darblola3.jpg', cat: 'darblola', descID: 0},
+        {
+          id: 'darblola1',
+          title: 'درب لولایی',
+          image: './portfolio/darblola1.jpg',
+          thumbnail: './portfolio/darblola1_tn.jpg',
+          cat: 'darblola',
+          descID: 0
+        },
+        {
+          id: 'darblola2',
+          title: 'درب لولایی',
+          image: './portfolio/darblola2.jpg',
+          thumbnail: './portfolio/darblola2_tn.jpg',
+          cat: 'darblola',
+          descID: 0
+        },
+        {
+          id: 'darblola3',
+          title: 'درب لولایی',
+          image: './portfolio/darblola3.jpg',
+          thumbnail: './portfolio/darblola3_tn.jpg',
+          cat: 'darblola',
+          descID: 0
+        },
 
-        {id: 'dojedare1', title: 'دوجداره', image: './portfolio/dojedare1.jpg', cat: 'dojedare', descID: 1},
-        {id: 'dojedare2', title: 'دوجداره', image: './portfolio/dojedare2.jpg', cat: 'dojedare', descID: 1},
-        {id: 'dojedare4', title: 'دوجداره', image: './portfolio/dojedare4.jpg', cat: 'dojedare', descID: 1},
+        {
+          id: 'dojedare1',
+          title: 'دوجداره',
+          image: './portfolio/dojedare1.jpg',
+          thumbnail: './portfolio/dojedare1_tn.jpg',
+          cat: 'dojedare',
+          descID: 1
+        },
+        {
+          id: 'dojedare2',
+          title: 'دوجداره',
+          image: './portfolio/dojedare2.jpg',
+          thumbnail: './portfolio/dojedare2_tn.jpg',
+          cat: 'dojedare',
+          descID: 1
+        },
+        {
+          id: 'dojedare4',
+          title: 'دوجداره',
+          image: './portfolio/dojedare4.jpg',
+          thumbnail: './portfolio/dojedare4_tn.jpg',
+          cat: 'dojedare',
+          descID: 1
+        },
 
-        {id: 'frame1', title: 'فریم', image: './portfolio/frame1.jpg', cat: 'frame', descID: 2},
-        {id: 'frame2', title: 'فریم', image: './portfolio/frame2.jpg', cat: 'frame', descID: 2},
-        {id: 'frame3', title: 'فریم', image: './portfolio/frame3.jpg', cat: 'frame', descID: 2},
-        {id: 'frame4', title: 'فریم', image: './portfolio/frame4.jpg', cat: 'frame', descID: 2},
-        {id: 'frame5', title: 'فریم', image: './portfolio/frame5.jpg', cat: 'frame', descID: 2},
+        {
+          id: 'frame1',
+          title: 'فریم',
+          image: './portfolio/frame1.jpg',
+          thumbnail: './portfolio/frame1_tn.jpg',
+          cat: 'frame',
+          descID: 2
+        },
+        {
+          id: 'frame2',
+          title: 'فریم',
+          image: './portfolio/frame2.jpg',
+          thumbnail: './portfolio/frame2_tn.jpg',
+          cat: 'frame',
+          descID: 2
+        },
+        {
+          id: 'frame3',
+          title: 'فریم',
+          image: './portfolio/frame3.jpg',
+          thumbnail: './portfolio/frame3_tn.jpg',
+          cat: 'frame',
+          descID: 2
+        },
+        {
+          id: 'frame4',
+          title: 'فریم',
+          image: './portfolio/frame4.jpg',
+          thumbnail: './portfolio/frame4_tn.jpg',
+          cat: 'frame',
+          descID: 2
+        },
+        {
+          id: 'frame5',
+          title: 'فریم',
+          image: './portfolio/frame5.jpg',
+          thumbnail: './portfolio/frame5_tn.jpg',
+          cat: 'frame',
+          descID: 2
+        },
 
-        {id: 'takjedare1', title: 'تک جداره', image: './portfolio/1jedare1.jpg', cat: 'takjedare', descID: 6},
-        {id: 'takjedare2', title: 'تک جداره', image: './portfolio/1jedare2.jpg', cat: 'takjedare', descID: 6},
-        {id: 'takjedare3', title: 'تک جداره', image: './portfolio/1jedare3.jpg', cat: 'takjedare', descID: 6},
-        {id: 'takjedare4', title: 'تک جداره', image: './portfolio/1jedare4.jpg', cat: 'takjedare', descID: 6},
-        {id: 'takjedare5', title: 'تک جداره', image: './portfolio/1jedare5.jpg', cat: 'takjedare', descID: 6},
-        {id: 'takjedare6', title: 'تک جداره', image: './portfolio/1jedare6.jpg', cat: 'takjedare', descID: 6},
-        {id: 'takjedare7', title: 'تک جداره', image: './portfolio/1jedare7.jpg', cat: 'takjedare', descID: 6},
-        {id: 'takjedare8', title: 'تک جداره', image: './portfolio/1jedare8.jpg', cat: 'takjedare', descID: 6},
-        {id: 'takjedare9', title: 'تک جداره', image: './portfolio/1jedare9.jpg', cat: 'takjedare', descID: 6},
-        {id: 'takjedare10', title: 'تک جداره', image: './portfolio/1jedare10.jpg', cat: 'takjedare', descID: 6},
-        {id: 'takjedare11', title: 'تک جداره', image: './portfolio/1jedare11.jpg', cat: 'takjedare', descID: 6},
-        {id: 'takjedare12', title: 'تک جداره', image: './portfolio/1jedare12.jpg', cat: 'takjedare', descID: 6},
-        {id: 'takjedare13', title: 'تک جداره', image: './portfolio/1jedare13.jpg', cat: 'takjedare', descID: 6},
-        {id: 'takjedare14', title: 'تک جداره', image: './portfolio/1jedare14.jpg', cat: 'takjedare', descID: 6},
-        {id: 'takjedare15', title: 'تک جداره', image: './portfolio/1jedare15.jpg', cat: 'takjedare', descID: 6},
-        {id: 'takjedare16', title: 'تک جداره', image: './portfolio/1jedare16.jpg', cat: 'takjedare', descID: 6},
-        {id: 'takjedare17', title: 'تک جداره', image: './portfolio/1jedare17.jpg', cat: 'takjedare', descID: 6},
-        {id: 'takjedare18', title: 'تک جداره', image: './portfolio/1jedare18.jpg', cat: 'takjedare', descID: 6},
-        {id: 'takjedare19', title: 'تک جداره', image: './portfolio/1jedare19.jpg', cat: 'takjedare', descID: 6},
+        {
+          id: 'takjedare1',
+          title: 'تک جداره',
+          image: './portfolio/1jedare1.jpg',
+          thumbnail: './portfolio/1jedare1_tn.jpg',
+          cat: 'takjedare',
+          descID: 6
+        },
+        {
+          id: 'takjedare2',
+          title: 'تک جداره',
+          image: './portfolio/1jedare2.jpg',
+          thumbnail: './portfolio/1jedare2_tn.jpg',
+          cat: 'takjedare',
+          descID: 6
+        },
+        {
+          id: 'takjedare3',
+          title: 'تک جداره',
+          image: './portfolio/1jedare3.jpg',
+          thumbnail: './portfolio/1jedare3_tn.jpg',
+          cat: 'takjedare',
+          descID: 6
+        },
+        {
+          id: 'takjedare4',
+          title: 'تک جداره',
+          image: './portfolio/1jedare4.jpg',
+          thumbnail: './portfolio/1jedare4_tn.jpg',
+          cat: 'takjedare',
+          descID: 6
+        },
+        {
+          id: 'takjedare5',
+          title: 'تک جداره',
+          image: './portfolio/1jedare5.jpg',
+          thumbnail: './portfolio/1jedare5_tn.jpg',
+          cat: 'takjedare',
+          descID: 6
+        },
+        {
+          id: 'takjedare6',
+          title: 'تک جداره',
+          image: './portfolio/1jedare6.jpg',
+          thumbnail: './portfolio/1jedare6_tn.jpg',
+          cat: 'takjedare',
+          descID: 6
+        },
+        {
+          id: 'takjedare7',
+          title: 'تک جداره',
+          image: './portfolio/1jedare7.jpg',
+          thumbnail: './portfolio/1jedare7_tn.jpg',
+          cat: 'takjedare',
+          descID: 6
+        },
+        {
+          id: 'takjedare8',
+          title: 'تک جداره',
+          image: './portfolio/1jedare8.jpg',
+          thumbnail: './portfolio/1jedare8_tn.jpg',
+          cat: 'takjedare',
+          descID: 6
+        },
+        {
+          id: 'takjedare9',
+          title: 'تک جداره',
+          image: './portfolio/1jedare9.jpg',
+          thumbnail: './portfolio/1jedare9_tn.jpg',
+          cat: 'takjedare',
+          descID: 6
+        },
+        {
+          id: 'takjedare10',
+          title: 'تک جداره',
+          image: './portfolio/1jedare10.jpg',
+          thumbnail: './portfolio/1jedare10_tn.jpg',
+          cat: 'takjedare',
+          descID: 6
+        },
+        {
+          id: 'takjedare11',
+          title: 'تک جداره',
+          image: './portfolio/1jedare11.jpg',
+          thumbnail: './portfolio/1jedare11_tn.jpg',
+          cat: 'takjedare',
+          descID: 6
+        },
+        {
+          id: 'takjedare12',
+          title: 'تک جداره',
+          image: './portfolio/1jedare12.jpg',
+          thumbnail: './portfolio/1jedare12_tn.jpg',
+          cat: 'takjedare',
+          descID: 6
+        },
+        {
+          id: 'takjedare13',
+          title: 'تک جداره',
+          image: './portfolio/1jedare13.jpg',
+          thumbnail: './portfolio/1jedare13_tn.jpg',
+          cat: 'takjedare',
+          descID: 6
+        },
+        {
+          id: 'takjedare14',
+          title: 'تک جداره',
+          image: './portfolio/1jedare14.jpg',
+          thumbnail: './portfolio/1jedare14_tn.jpg',
+          cat: 'takjedare',
+          descID: 6
+        },
+        {
+          id: 'takjedare15',
+          title: 'تک جداره',
+          image: './portfolio/1jedare15.jpg',
+          thumbnail: './portfolio/1jedare15_tn.jpg',
+          cat: 'takjedare',
+          descID: 6
+        },
+        {
+          id: 'takjedare16',
+          title: 'تک جداره',
+          image: './portfolio/1jedare16.jpg',
+          thumbnail: './portfolio/1jedare16_tn.jpg',
+          cat: 'takjedare',
+          descID: 6
+        },
+        {
+          id: 'takjedare17',
+          title: 'تک جداره',
+          image: './portfolio/1jedare17.jpg',
+          thumbnail: './portfolio/1jedare17_tn.jpg',
+          cat: 'takjedare',
+          descID: 6
+        },
+        {
+          id: 'takjedare18',
+          title: 'تک جداره',
+          image: './portfolio/1jedare18.jpg',
+          thumbnail: './portfolio/1jedare18_tn.jpg',
+          cat: 'takjedare',
+          descID: 6
+        },
+        {
+          id: 'takjedare19',
+          title: 'تک جداره',
+          image: './portfolio/1jedare19.jpg',
+          thumbnail: './portfolio/1jedare19_tn.jpg',
+          cat: 'takjedare',
+          descID: 6
+        },
 
         {
           id: 'ghoflodastgire2',
           title: 'Meroni مدل forma',
           image: './portfolio/ghoflodastgire2.jpg',
+          thumbnail: './portfolio/ghoflodastgire2_tn.jpg',
           cat: 'ghoflodastgire',
           descID: 9
         },
@@ -468,6 +707,7 @@
           id: 'ghoflodastgire3',
           title: 'قفل هوشمند',
           image: './portfolio/ghoflodastgire3.jpg',
+          thumbnail: './portfolio/ghoflodastgire3_tn.jpg',
           cat: 'ghoflodastgire',
           descID: 7
         },
@@ -475,6 +715,7 @@
           id: 'ghoflodastgire4',
           title: 'Hoppe مدل HCS',
           image: './portfolio/ghoflodastgire4.jpg',
+          thumbnail: './portfolio/ghoflodastgire4_tn.jpg',
           cat: 'ghoflodastgire',
           descID: 8
         },
@@ -483,6 +724,7 @@
           id: 'darbitaliayi1',
           title: 'درب ایتالیایی',
           image: './portfolio/darbitaliayi1.jpg',
+          thumbnail: './portfolio/darbitaliayi1_tn.jpg',
           cat: 'darbitaliayi',
           descID: 4
         },
@@ -490,6 +732,7 @@
           id: 'darbitaliayi2',
           title: 'درب ایتالیایی',
           image: './portfolio/darbitaliayi2.jpg',
+          thumbnail: './portfolio/darbitaliayi2_tn.jpg',
           cat: 'darbitaliayi',
           descID: 4
         },
@@ -497,6 +740,7 @@
           id: 'darbitaliayi3',
           title: 'درب ایتالیایی',
           image: './portfolio/darbitaliayi3.jpg',
+          thumbnail: './portfolio/darbitaliayi3_tn.jpg',
           cat: 'darbitaliayi',
           descID: 4
         },
@@ -544,10 +788,10 @@
         // 7 - ghofle hooshmand
         '<p>اگر به دنبال حریم خصوصی با امنیت بالا هستید، ما قفل‌های دیجیتال را به شما پیشنهاد می‌‌دهیم. سامسونگ، اورنت، یونی تاچ، ییل و .. از جمله شرکت‌های محبوب در تولید این محصول می‌‌باشند. از مزایای قفل‌های هوشمند می‌‌توان به مورد زیر اشاره کرد :</p>' +
         '<ul>' +
-                '<li>- دسترسی‌ توسط رمز یا اثر انگشت</li>' +
-                '<li>- دسترسی‌ توسط ریموت کنترل</li>' +
-                '<li>- مجهز به سیستم ضد سرقت</li>' +
-                '<li>- مجهز به سیستم اعلا حریق</li>' +
+        '<li>- دسترسی‌ توسط رمز یا اثر انگشت</li>' +
+        '<li>- دسترسی‌ توسط ریموت کنترل</li>' +
+        '<li>- مجهز به سیستم ضد سرقت</li>' +
+        '<li>- مجهز به سیستم اعلا حریق</li>' +
         '</ul>',
         // 8 - Hoppe مدل HCS
         '<p>کمپانی سویسی Hoppe از سال ۱۹۵۲ در طراحی و تولید قفل و دستگیره برای انواع درب‌ها فعالیت دارد. Hope – HCSمدلی‌ مخصوص درب‌های شیشه‌ای داخلی‌ در خانه و محل کار می‌‌باشد. جنس قفل از آلمینیوم بوده و برای شیشه‌های با ضخامت ۸ تا ۱۰ میلی‌ متر قابل استفاده است.</p>',
